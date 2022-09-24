@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  input {
+    height: 40px;
+    width: 600px;
+    padding: revert;
+  }
+  input::placeholder {
+    font-weight: bold;
+    color: $black;
+    padding-left: 20px;
+  }
+}

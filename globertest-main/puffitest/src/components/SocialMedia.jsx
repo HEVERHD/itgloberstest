@@ -1,3 +1,5 @@
+import { Form } from "./";
+
 export const SocialMedia = () => {
   return (
     <section>
@@ -50,6 +52,9 @@ export const SocialMedia = () => {
             <h4>NEWSLETTER</h4>
             <h2>SUSCRIBETE</h2>
             <p>Y enterate de todas las novedades</p>
+          </div>
+          <div className="form">
+            <Form />
           </div>
         </div>
       </div>

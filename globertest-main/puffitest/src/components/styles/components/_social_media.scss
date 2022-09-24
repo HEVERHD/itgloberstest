@@ -81,3 +81,13 @@
     color: $dark;
   }
 }
+
+.form {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+
+  p {
+    margin-left: 440px;
+  }
+}
