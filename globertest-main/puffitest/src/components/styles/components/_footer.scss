@@ -1,0 +1,26 @@
+.footer_container {
+  box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-top: -310px;
+
+  p {
+    color: $black;
+  }
+}
+
+.footer_logo {
+  width: 100px;
+}
+
+.redes_sociales {
+  align-items: center;
+  display: flex;
+
+  img {
+    height: 20px;
+    margin-left: 22px;
+    width: 20px;
+  }
+}
