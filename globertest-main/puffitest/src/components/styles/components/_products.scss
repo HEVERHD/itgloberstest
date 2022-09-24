@@ -1,0 +1,99 @@
+.section_container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 600px;
+  margin-bottom: 500px;
+}
+
+.umbrella_img1 {
+  background-blend-mode: darken;
+  background-image: url("../../src/assets/img_productos/pufi_rain.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    cursor: pointer;
+    font-size: small;
+  }
+
+  button {
+    margin-left: 41%;
+    margin-top: 35%;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    font-size: 14px;
+    height: 62px;
+    margin-left: 35px;
+    padding: 18px;
+    margin-left: 41%;
+    margin-top: 35%;
+    text-align: center;
+    width: 150px;
+  }
+}
+
+.pufi {
+  height: 100%;
+  margin-top: 100px;
+  text-align: center;
+
+  p {
+    color: $dark;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+
+  hr {
+    width: 5%;
+  }
+}
+
+.img2 {
+  width: 31%;
+  margin: 0 auto;
+}
+
+.bi-chevron-right {
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.img_ver_mas {
+  align-items: center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.img_beach {
+  height: 801px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bi-caret-left-fill {
+  border: 11px solid transparent;
+  border-right-color: $white;
+  bottom: 188px;
+  height: 0;
+  left: -440px;
+  position: relative;
+  width: 0;
+  z-index: 999;
+}
+
+.bi-caret-right-fill {
+  border: 20px solid transparent;
+  border-left-color: $white;
+  bottom: 234px;
+  height: 0;
+  left: 488px;
+  position: relative;
+  width: 0;
+  z-index: 998;
+}
