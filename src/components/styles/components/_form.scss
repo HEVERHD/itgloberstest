@@ -1,0 +1,36 @@
+form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  input {
+    height: 40px;
+    width: 600px;
+    padding: revert;
+  }
+  input::placeholder {
+    font-weight: bold;
+    color: $black;
+    padding-left: 20px;
+  }
+}
+
+.bi-arrow-right {
+  color: $black;
+  cursor: pointer;
+  left: -35px;
+  position: relative;
+}
+
+.error_form {
+  color: $err;
+}
+
+.swal2-icon.swal2-error {
+  border-color: $dark !important;
+  error {
+    icon: aqua;
+  }
+}
+.swal2-icon.swal2-success {
+  border-color: $secondary !important;
+}
