@@ -5,3 +5,4 @@ export * from "./Products";
 export * from "./Form";
 export * from "./HeaderLogin";
 export * from "./Copy";
+export * from "./Loader";

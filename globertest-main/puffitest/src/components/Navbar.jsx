@@ -5,8 +5,14 @@ import puffinap from "../assets/img_nav/puffi_nap.png";
 import puffiPuff from "../assets/img_nav/puffi_puff.png";
 
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useMemo } from "react";
 
 export const Navbar = () => {
+  const { displayName, status } = useSelector((state) => state.auth);
+
+  const authenticated = useMemo(() => status === "authenticated", [status]);
+
   return (
     <div className=" navbar_container ">
       <Link to="/">
@@ -39,9 +45,16 @@ export const Navbar = () => {
         </li>
       </ul>
       <div className="user">
-        <Link to="/login">
-          <button>MI CUENTA</button>
-        </Link>
+        {/* {authenticated && <p>HOLA &nbsp; {displayName.toUpperCase()}</p>} */}
+
+        {status === "authenticated" ? (
+          <p>HOLA &nbsp; {displayName.toUpperCase().substring(0, 7)}</p>
+        ) : (
+          <Link to="/login">
+            <button>MI CUENTA</button>
+          </Link>
+        )}
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="12"

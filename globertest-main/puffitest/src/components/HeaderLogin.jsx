@@ -2,11 +2,14 @@ import { Navbar } from "./Navbar";
 
 import { startGoogleSignIn, startLoginWithEmailPassword } from "../store/auth";
 
-import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, Navigate } from "react-router-dom";
+import { useMemo } from "react";
 
 export const HeaderLogin = () => {
   const dispatch = useDispatch();
+  const { status } = useSelector((state) => state.auth);
+  const authenticated = useMemo(() => status === "authenticated", [status]);
 
   const onGoogleSignIn = () => {
     console.log("google sing in");
@@ -23,6 +26,7 @@ export const HeaderLogin = () => {
   };
   return (
     <>
+      {authenticated && <Navigate to="/" />}
       <div className="header_container">
         <Navbar />
         <div className="main ">
