@@ -17,10 +17,20 @@
 .redes_sociales {
   align-items: center;
   display: flex;
+}
 
-  img {
-    height: 20px;
-    margin-left: 22px;
-    width: 20px;
-  }
+.img_redes {
+  align-items: center;
+  display: flex;
+}
+
+.line {
+  border-right: 1px solid rgba(88, 88, 88, 0.4);
+  display: block;
+  font-size: 20px;
+}
+
+.img_compra {
+  margin: 0 auto;
+  width: 200px;
 }

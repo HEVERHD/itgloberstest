@@ -4,40 +4,44 @@ import pufficart from "../assets/img_nav/puffi_cart.png";
 import puffinap from "../assets/img_nav/puffi_nap.png";
 import puffiPuff from "../assets/img_nav/puffi_puff.png";
 
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <div className=" navbar_container ">
-      <img className="img_logo" src={puffi} alt="puffi" />
+      <Link to="/">
+        <img className="img_logo" src={puffi} alt="puffi" />
+      </Link>
       <ul>
         <li>
-          <Link to="#" className="product_navbar">
+          <a to="/" className="product_navbar">
             <img className="img_nav" src={puffiPuff} alt="img_Navbar" />
             PUFI PUFF
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a to="#">
             <img className="img_nav" src={puffirain} alt="img_Navbar" />
             PUFI RAIN
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a to="#">
             <img className="img_nav" src={pufficart} alt="img_Navbar" />
             PUFI CART
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="#">
+          <a to="#">
             <img className="img_nav" src={puffinap} alt="img_Navbar" />
             PUFI NAP
-          </Link>
+          </a>
         </li>
       </ul>
       <div className="user">
-        <button>MI CUENTA</button>
+        <Link to="/login">
+          <button>MI CUENTA</button>
+        </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="12"
@@ -52,7 +56,7 @@ export const Navbar = () => {
           />
         </svg>
         <span className="line_vertical"> </span>
-        <button>MI COMPRA</button>
+        <button className="button">MI COMPRA</button>
       </div>
     </div>
   );

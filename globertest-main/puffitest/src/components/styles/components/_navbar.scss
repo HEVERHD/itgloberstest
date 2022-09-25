@@ -103,8 +103,9 @@ li {
 
   button {
     background-color: transparent;
-    border: none;
     color: $white;
+    border: none;
+    list-style: none;
 
     &:hover {
       color: $main;
