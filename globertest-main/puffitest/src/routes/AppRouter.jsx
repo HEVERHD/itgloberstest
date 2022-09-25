@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import { Login } from "../components/auth/components/Login";
+import { HeaderLogin } from "../components";
+import { HeaderRegister } from "../components/HeaderRegister";
 
 import PuffiApp from "../PuffiApp";
 
@@ -8,7 +9,8 @@ export const AppRouter = () => {
     <>
       <Routes>
         <Route path="/" element={<PuffiApp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<HeaderLogin />} />
+        <Route path="/register" element={<HeaderRegister />} />
       </Routes>
     </>
   );

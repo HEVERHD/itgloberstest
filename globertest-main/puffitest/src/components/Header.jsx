@@ -5,7 +5,7 @@ export const Header = () => {
     <div className="header_container">
       <Navbar />
       <div>
-        <h1>
+        <h1 className="animate__animated animate__fadeInTopRight">
           ESTÁR CÓMODO,
           <br />
           NUNCA FUE TAN FÁCIL.
