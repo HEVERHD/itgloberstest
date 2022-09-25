@@ -83,7 +83,12 @@ export const Form = () => {
           />
         </svg>
         <div>
-          {errors.email && <h3 className="error_form"> {errors.email} </h3>}{" "}
+          {errors.email && (
+            <h3 className="error_form animate__animated animate__flash">
+              {" "}
+              {errors.email}{" "}
+            </h3>
+          )}{" "}
         </div>
       </div>
     </form>
