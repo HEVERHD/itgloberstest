@@ -26,36 +26,16 @@ export const Footer = () => {
         <h5>COMPRA 100% SEGURA</h5>
         <div className="compras">
           <img className="img_compra" src={img_compra} alt="img_compra" />
-          <h5>
-            COMPRA CON <br /> LA GARANTIA <br />
-            DE PUFI
-          </h5>
         </div>
+      </div>
+      <div className="redes_sociales">
+        <h5>SEGUINOS EN</h5>
 
-        <div className="redes_sociales">
-          <h5>SEGUINOS EN</h5>
-          <a
-            href="https://www.facebook.com/profile.php?id=100019097958018"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="img_redes" src={facebook} alt="" />
-          </a>
-          <a
-            href="https://www.instagram.com/lorrainetest/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="img_redes" src={instagram} alt="" />
-          </a>
-          <a
-            href="https://twitter.com/abc_tecnologia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="img_redes" src={twitter} alt="" />
-          </a>
-        </div>
+        <img className="img_redes" src={facebook} alt="" />
+
+        <img className="img_redes" src={instagram} alt="" />
+
+        <img className="img_redes" src={twitter} alt="" />
       </div>
     </section>
   );

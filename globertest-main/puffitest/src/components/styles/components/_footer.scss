@@ -1,8 +1,8 @@
 .footer_container {
-  box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.774);
   display: flex;
   justify-content: space-evenly;
-
+  margin-bottom: 10px;
   margin-top: -310px;
 
   p {
@@ -11,26 +11,29 @@
 }
 
 .footer_logo {
-  width: 100px;
+  img {
+    width: 100px;
+  }
 }
 
 .redes_sociales {
-  align-items: center;
   display: flex;
+  padding-top: 0px;
 }
 
 .img_redes {
-  align-items: center;
-  display: flex;
+  height: 20px;
+  width: 20px;
+  margin-left: 30px;
+  margin-top: 19px;
 }
 
-.line {
-  border-right: 1px solid rgba(88, 88, 88, 0.4);
-  display: block;
-  font-size: 20px;
+.compras {
+  display: flex;
 }
 
 .img_compra {
   margin: 0 auto;
   width: 200px;
+  height: 61px;
 }

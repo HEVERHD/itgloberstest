@@ -1,5 +1,5 @@
 //components
-import { Footer, Header, Products } from "./components";
+import { Footer, Header, Products, Copy } from "./components";
 import { SocialMedia } from "./components/SocialMedia";
 
 //styles
@@ -12,6 +12,7 @@ function App() {
       <Products />
       <SocialMedia />
       <Footer />
+      <Copy />
     </>
   );
 }
