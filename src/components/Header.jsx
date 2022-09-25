@@ -6,7 +6,7 @@ export const Header = () => {
       <Navbar />
       <div>
         <h1 className="animate__animated animate__fadeInTopRight">
-          ESTÁR CÓMODO,
+          ESTAR CÓMODO,
           <br />
           NUNCA FUE TAN FÁCIL.
         </h1>
